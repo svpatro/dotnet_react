@@ -24,6 +24,15 @@ builder.Services.AddDbContext<DataContext>(opt =>
 
 });
 
+// Adding in a CORS (Cross-Origin Resource Sharing) policy in our HTTP headers
+// This lets the browser know where it is okay to take resources from
+
+builder.Services.AddCors(opt => {
+    opt.AddPolicy("CorsPolicy", policy => {
+        policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000");
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -33,9 +42,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors("CorsPolicy");
+
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Using keyword is automatic garbage collection
 
 using var scope = app.Services.CreateScope();
 var services = scope.ServiceProvider;
