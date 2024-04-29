@@ -9,7 +9,7 @@ function App() {
   // Axios is an HTTP client for node.js and the browser (it is "isomorphic")
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/activities')
+    axios.get('http://localhost:5000/api/videos')
       .then(response => {
         setVideos(response.data)
       })
