@@ -3,7 +3,7 @@ import './App.css'
 import axios from 'axios';
 
 function App() {
-  const [activities, setActivities] = useState([]);
+  const [videos, setVideos] = useState([]);
 
   // UseEffect is a React Hook that allows us to sync a component with an external system
   // Axios is an HTTP client for node.js and the browser (it is "isomorphic")
@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     axios.get('http://localhost:5000/api/activities')
       .then(response => {
-        setActivities(response.data)
+        setVideos(response.data)
       })
   }, [])
 
@@ -19,9 +19,9 @@ function App() {
     <div>
       <h1>Reactivities</h1>
       <ul>
-        {activities.map((activity: any) => (
-          <li key={activity.id}>
-            {activity.title}
+        {videos.map((video: any) => (
+          <li key={video.id}>
+            {video.title}
           </li>
         ))}
       </ul>

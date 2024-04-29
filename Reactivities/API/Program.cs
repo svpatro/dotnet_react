@@ -48,6 +48,8 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// Using keyword is automatic garbage collection
+
 using var scope = app.Services.CreateScope();
 var services = scope.ServiceProvider;
 

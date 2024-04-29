@@ -10,7 +10,7 @@ namespace Persistence
         }
 
 
-        public DbSet<Activity> Activities { get; set; }
+        public DbSet<Video> Videos { get; set; }
         
     }
 }
