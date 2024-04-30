@@ -15,7 +15,7 @@ namespace API.Controllers
     public class VideosController : BaseAPIController
     {
         [HttpGet] //api/videos
-        public async Task<ActionResult<List<Video>>> GetVideos()
+        public async Task<ActionResult<List<Video>>> GetVideos(CancellationToken ct)
         {
 
             return await Mediator.Send(new List_C.Query());

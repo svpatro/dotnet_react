@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Domain;
 using MediatR;
@@ -20,6 +21,7 @@ namespace Application
 
             public async Task<List<Video>> Handle(Query request, CancellationToken cancellationToken)
             {
+
                 return await _context.Videos.ToListAsync();
             }
         }
