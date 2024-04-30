@@ -409,6 +409,7 @@ FodyWeavers.xsd
 StudentAssets/
 .vscode/
 Reactivities/API/appsettings.json
+obj/
 
 
 # globs
