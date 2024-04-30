@@ -1,6 +1,6 @@
 # dotnet_react
 
-Uses the Model-View-Controller (MVP) design pattern.
+Uses the Model-View-Controller (MVP) design pattern. Each heading and subheading relates to a project and folder, respectively.
 
 ## API
 
