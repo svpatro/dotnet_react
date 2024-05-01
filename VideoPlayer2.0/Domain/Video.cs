@@ -11,6 +11,6 @@ namespace Domain
         public string Visibility {get; set; } 
         public string Rating {get; set; }     
         public string Tags {get; set; } 
-       
+        public string filePath {get; set;}
     }
 }

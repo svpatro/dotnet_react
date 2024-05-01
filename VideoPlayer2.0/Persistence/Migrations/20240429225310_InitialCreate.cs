@@ -22,7 +22,8 @@ namespace Persistence.Migrations
                     Category = table.Column<string>(type: "TEXT", nullable: true),
                     Visibility = table.Column<string>(type: "TEXT", nullable: true),
                     Rating = table.Column<string>(type: "TEXT", nullable: true),
-                    Tags = table.Column<string>(type: "TEXT", nullable: true)
+                    Tags = table.Column<string>(type: "TEXT", nullable: true),
+                    filePath = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {

@@ -23,6 +23,7 @@ namespace Persistence
                     Visibility = "Public",
                     Rating = "4.6",
                     Tags = "Tag1",
+                    filePath = "/video1.mp4"
 
                 },
                 new Video
