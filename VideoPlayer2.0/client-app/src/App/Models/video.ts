@@ -1,4 +1,4 @@
-export interface Root {
+export type Video = {
     id: string
     title: string
     date: string
