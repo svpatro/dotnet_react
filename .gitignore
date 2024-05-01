@@ -404,6 +404,13 @@ FodyWeavers.xsd
 ## Visual studio for Mac
 ##
 
+# Custom
+
+StudentAssets/
+.vscode/
+Reactivities/API/appsettings.json
+obj/
+
 
 # globs
 Makefile.in
