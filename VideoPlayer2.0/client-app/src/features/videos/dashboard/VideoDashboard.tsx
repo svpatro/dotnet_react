@@ -1,6 +1,6 @@
 import { Grid } from "semantic-ui-react";
 import { Video } from "../../../app/models/video";
-import VideoList from "./videoList.tsx";
+import VideoList from "./VideoList.tsx";
 import VideoDetails from "../details/VideoDetails.tsx";
 import VideoForm from "../form/VideoForm.tsx";
 

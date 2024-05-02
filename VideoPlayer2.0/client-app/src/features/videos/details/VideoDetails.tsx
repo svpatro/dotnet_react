@@ -12,7 +12,7 @@ interface Props {
 export default function videoDetails({ video, cancelSelectvideo, openForm }: Props){
     return(
         <Card fluid>
-        <Image src={`/categoryImages/${video.category}.jpg`} />
+        <video controls src={`${video.filePath}`} />
         <CardContent>
           <CardHeader>{video.title}</CardHeader>
           <CardMeta>
