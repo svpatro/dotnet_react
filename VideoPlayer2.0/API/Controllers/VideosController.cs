@@ -18,7 +18,7 @@ namespace API.Controllers
         public async Task<ActionResult<List<Video>>> GetVideos(CancellationToken ct)
         {
 
-            return await Mediator.Send(new List_C.Query());
+            return await Mediator.Send(new List_C.Query(), ct);
 
         }
 
